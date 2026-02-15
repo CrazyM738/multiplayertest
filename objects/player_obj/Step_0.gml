@@ -65,6 +65,28 @@ if (!down && v_vel > 0)
 
 
 
+//correct max velocity
+if (h_vel > 0 && h_vel > max_vel)
+{
+	h_vel = max_vel;	
+}
+
+if (h_vel < 0 && h_vel < max_vel * -1)
+{
+	h_vel = max_vel * -1;	
+}
+
+if (v_vel > 0 && v_vel > max_vel)
+{
+	v_vel = max_vel;	
+}
+
+if (v_vel < 0 && v_vel < max_vel * -1)
+{
+	v_vel = max_vel * -1;	
+}
+
+
 
 
 x += h_vel;
