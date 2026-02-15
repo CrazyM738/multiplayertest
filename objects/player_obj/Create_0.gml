@@ -1,4 +1,20 @@
 
+
+//player spawning logic
+if (player_id == 0)
+{
+	x = 50;
+	y = 50;
+}
+
+else if (player_id == 1)
+{
+	x = 100;
+	y = 100;
+}
+
+
+
 //move_speed constant
 move_speed = 15;
 
