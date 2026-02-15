@@ -1,17 +1,27 @@
 
 
 //player spawning logic
-if (player_id == 0)
+
+
+
+function setup_player(_id)
 {
-	x = 50;
-	y = 50;
+    player_id = _id;
+
+    if (player_id == 0)
+    {
+        x = 50;
+        y = 50;
+    }
+    else if (player_id == 1)
+    {
+        x = 100;
+        y = 100;
+    }
 }
 
-else if (player_id == 1)
-{
-	x = 100;
-	y = 100;
-}
+
+
 
 
 

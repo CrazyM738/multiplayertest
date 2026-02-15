@@ -2,16 +2,17 @@
 
 //controls
 
-input = rollback_get_input();
+if (rollback_is_game_running())
+{
+    input = rollback_get_input();
+}
+else
+{
+    return; // do nothing until match starts
+}
 
-rollback_define_input
-({
-	left: ord("A"),
-	right: ord("D"),
-	up: ord("W"),
-	down: ord("S")
-	
-})
+
+
 
 
 //up = input.(ord("W"));
