@@ -22,6 +22,7 @@
   },
   "name":"MultiiplayerTest",
   "resources":[
+    {"id":{"name":"game_obj","path":"objects/game_obj/game_obj.yy",},},
     {"id":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"player_spr","path":"sprites/player_spr/player_spr.yy",},},
