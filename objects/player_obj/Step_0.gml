@@ -68,6 +68,7 @@ if (!down && v_vel > 0)
 
 
 x += h_vel;
+y += v_vel;
 
 
 
