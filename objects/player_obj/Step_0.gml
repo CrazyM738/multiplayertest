@@ -1,10 +1,13 @@
 
 
 //controls
-up = keyboard_check(ord("W"));
-down = keyboard_check(ord("S"));
-left = keyboard_check(ord("A"));
-right = keyboard_check(ord("D"));
+
+input = rollback_get_input();
+
+up = input.(ord("W"));
+down = input.(ord("S"));
+left = input.(ord("A"));
+right = input.(ord("D"));
 
 
 
