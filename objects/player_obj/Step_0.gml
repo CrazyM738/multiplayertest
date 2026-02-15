@@ -4,21 +4,31 @@
 
 input = rollback_get_input();
 
-up = input.(ord("W"));
-down = input.(ord("S"));
-left = input.(ord("A"));
-right = input.(ord("D"));
+rollback_define_input
+({
+	left: ord("A"),
+	right: ord("D"),
+	up: ord("W"),
+	down: ord("S")
+	
+})
+
+
+//up = input.(ord("W"));
+//down = input.(ord("S"));
+//left = input.(ord("A"));
+//right = input.(ord("D"));
 
 
 
 //left acceleration
-if (left)
+if (input.left)
 {
 	h_vel -= move_speed;	
 }
 
 //left deceleration
-if (!left && h_vel < 0)
+if (!input.left && h_vel < 0)
 {
 	h_vel += move_speed;	
 }
@@ -26,12 +36,12 @@ if (!left && h_vel < 0)
 
 
 //right acelleration
-if (right)
+if (input.right)
 {
 	h_vel += move_speed;	
 }
 
-if (!right && h_vel > 0)
+if (!input.right && h_vel > 0)
 {
 	h_vel -= move_speed;	
 }
@@ -39,24 +49,24 @@ if (!right && h_vel > 0)
 
 
 //up acceleration
-if (up)
+if (input.up)
 {
 	v_vel -= move_speed;
 }
 
 //up decelleration
-if (!up && v_vel < 0)
+if (!input.up && v_vel < 0)
 {
 	v_vel += move_speed;	
 }
 
 //down acceleration
-if (down)
+if (input.down)
 {
 	v_vel += move_speed;	
 }
 
-if (!down && v_vel > 0)
+if (!input.down && v_vel > 0)
 {
 	v_vel -= move_speed;	
 }
