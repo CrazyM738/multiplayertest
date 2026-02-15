@@ -1,4 +1,4 @@
-rollback_define_player(obj_player);
+rollback_define_player(player_obj);
 
 if (!rollback_join_game())
 {
