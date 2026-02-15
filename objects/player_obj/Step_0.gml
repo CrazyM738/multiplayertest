@@ -9,7 +9,7 @@ right = keyboard_check(ord("D"));
 
 
 //left acceleration
-if (left )
+if (left)
 {
 	h_vel -= move_speed;	
 }
